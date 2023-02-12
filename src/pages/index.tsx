@@ -1,20 +1,22 @@
 import Head from "next/head";
 import styled from "styled-components";
 import { Navbar } from "src/components/Navbar";
-import { Button, Flex } from "@mantine/core";
+import { Button, Flex, Center } from "@mantine/core";
 
 const StyledHeroSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 80vh;
+  padding: 32px;
 `;
 
 const StyledTitle = styled.h1`
   display: flex;
   align-items: center;
-  font-size: 64px;
+  font-size: 3.2rem;
   font-weight: 800;
   gap: 8px;
 

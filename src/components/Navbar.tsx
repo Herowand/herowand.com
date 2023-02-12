@@ -12,7 +12,7 @@ const StyledLogo = styled.div`
   font-size: 24px;
   font-weight: 800;
   gap: 8px;
-  padding: 16px 40px;
+  padding: 16px;
 
   background: linear-gradient(180deg, #fff 25%, rgba(255, 255, 255, 0.7) 100%);
   -webkit-background-clip: text;
