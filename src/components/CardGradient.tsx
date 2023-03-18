@@ -1,44 +1,37 @@
-import {
-  createStyles,
-  Paper,
-  Text,
-  ThemeIcon,
-  rem,
-  Image,
-  Avatar,
-} from "@mantine/core";
-import { IconColorSwatch, IconLock } from "@tabler/icons-react";
-import Link from "next/link";
+import { createStyles, Paper, Text, rem, Image, Avatar } from "@mantine/core";
+import { IconLock } from "@tabler/icons-react";
 
-const useStyles = createStyles((theme) => ({
-  card: {
-    position: "relative",
-    cursor: "pointer",
-    overflow: "hidden",
-    transition: "transform 150ms ease, box-shadow 100ms ease",
-    padding: theme.spacing.xl,
-    paddingLeft: `calc(${theme.spacing.xl} * 2)`,
+const useStyles = createStyles(
+  (theme, { isPassive }: { isPassive: boolean }) => ({
+    card: {
+      position: "relative",
+      cursor: "pointer",
+      overflow: "hidden",
+      transition: "transform 150ms ease, box-shadow 100ms ease",
+      padding: theme.spacing.xl,
+      paddingLeft: `calc(${theme.spacing.xl} * 2)`,
 
-    "&:hover": {
-      boxShadow: theme.shadows.md,
-      transform: "scale(1.02)",
+      "&:hover": {
+        boxShadow: theme.shadows.md,
+        transform: "scale(1.02)",
+      },
+
+      "&::before": {
+        content: '""',
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        width: rem(6),
+        backgroundImage: theme.fn.linearGradient(
+          0,
+          isPassive ? theme.colors.dark[6] : theme.colors.pink[6],
+          isPassive ? theme.colors.dark[3] : theme.colors.orange[6]
+        ),
+      },
     },
-
-    "&::before": {
-      content: '""',
-      position: "absolute",
-      top: 0,
-      bottom: 0,
-      left: 0,
-      width: rem(6),
-      backgroundImage: theme.fn.linearGradient(
-        0,
-        theme.colors.pink[6],
-        theme.colors.orange[6]
-      ),
-    },
-  },
-}));
+  })
+);
 
 interface CardGradientProps {
   title: string;
@@ -53,7 +46,7 @@ export function CardGradient({
   image,
   href,
 }: CardGradientProps) {
-  const { classes } = useStyles();
+  const { classes } = useStyles({ isPassive: !href });
   return (
     <Paper
       withBorder

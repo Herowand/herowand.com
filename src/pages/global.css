@@ -1,5 +1,9 @@
 body {
-  background: #141517;
+  background: #141517 !important;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 a {

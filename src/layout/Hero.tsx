@@ -7,7 +7,7 @@ import {
   rem,
   Flex,
 } from "@mantine/core";
-import { Dots } from "./Dots";
+import { Dots } from "../components/Dots";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {

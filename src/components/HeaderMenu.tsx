@@ -13,7 +13,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons-react";
-import { HerowandLogo } from "./HerowandLogo";
+import { HerowandLogo } from "../layout/HerowandLogo";
 
 const useStyles = createStyles((theme) => ({
   inner: {

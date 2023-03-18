@@ -1,17 +1,5 @@
-import {
-  createStyles,
-  Text,
-  Container,
-  ActionIcon,
-  Group,
-  rem,
-} from "@mantine/core";
-import {
-  IconBrandTwitter,
-  IconBrandYoutube,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
-import { HerowandLogo } from "./HerowandLogo";
+import { createStyles, Text, Container, rem } from "@mantine/core";
+import { HerowandLogo } from "../layout/HerowandLogo";
 
 const useStyles = createStyles((theme) => ({
   footer: {
