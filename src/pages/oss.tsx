@@ -27,18 +27,16 @@ const Oss: React.FC<{ sponsors: any[] }> = ({ sponsors }) => {
         <Title order={3} pb="xl">
           Sponsors
         </Title>
-        <Flex gap={40} wrap="wrap">
+        <Flex gap={40} wrap="wrap" justify="center">
           {sponsors?.map((sponsor) => (
             <Link href={sponsor.profile} key={sponsor.handle}>
-              <Box maw={240}>
-                <Image
-                  radius="md"
-                  maw={60}
-                  src={sponsor.avatar}
-                  alt={sponsor.handle}
-                  caption={sponsor.handle}
-                />
-              </Box>
+              <Image
+                radius="md"
+                width={80}
+                src={sponsor.avatar}
+                alt={sponsor.handle}
+                caption={sponsor.handle}
+              />
             </Link>
           ))}
         </Flex>

@@ -6,6 +6,10 @@ body {
   scroll-behavior: smooth;
 }
 
+figcaption {
+  word-break: break-all;
+}
+
 a {
   text-decoration: none;
 }
