@@ -111,19 +111,18 @@ export function HeroText() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Visualize your data{" "}
+          Building top-notch{" "}
           <Text component="span" className={classes.highlight} inherit>
-            instantly
+            innovative
           </Text>{" "}
-          into graphs
+          tools.{" "}
         </Title>
 
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Next-generation tools matching with your needs to understand the
-            data.
-            <br />
-            Paste. Modify. View.
+            Transform your development experience with Herowand&apos;s intuitive
+            tools and unleash your creativity to build the next generation of
+            apps.
           </Text>
         </Container>
 
