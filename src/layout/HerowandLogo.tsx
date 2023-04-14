@@ -5,8 +5,8 @@ import React from "react";
 export const HerowandLogo = () => {
   return (
     <Link href="/">
-      <Flex align="center" gap={4}>
-        <Image src="logo.webp" width={28} alt="herowand logo" />
+      <Flex align="center" gap="sm">
+        <Image src="logo.svg" width={28} alt="herowand logo" />
         <Text
           variant="gradient"
           gradient={{ from: "#BDBCBC", to: "#FFFFFF", deg: 360 }}
