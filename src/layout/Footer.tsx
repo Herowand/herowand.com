@@ -29,6 +29,10 @@ export const Footer = () => {
               label: "Terms of Service",
               link: "#",
             },
+            {
+              label: "Privacy Policy",
+              link: "/privacy",
+            },
           ],
         },
         {
