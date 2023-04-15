@@ -37,7 +37,7 @@ export default function Home() {
           <Button
             variant="light"
             component="a"
-            href="https://github.com/sponsors/AykutSarac"
+            href="https://patreon.com/Herowand"
           >
             Become Backer
           </Button>

@@ -133,7 +133,7 @@ export function HeroText() {
             variant="default"
             color="gray"
             component="a"
-            href="https://github.com/sponsors/AykutSarac"
+            href="https://patreon.com/Herowand"
           >
             Become Backer
           </Button>
