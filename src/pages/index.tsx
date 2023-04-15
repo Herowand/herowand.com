@@ -52,14 +52,19 @@ export default function Home() {
             <Grid>
               <Grid.Col sm={6}>
                 <CardGradient
+                  title="JSON Crack"
                   href="https://jsoncrack.com"
                   image="https://cdn-1.webcatalog.io/catalog/json-crack/json-crack-icon-filled-256.png?v=1675593486109"
-                  title="JSON Crack"
                   description="Visualize your JSON data instantly into graphs."
                 />
               </Grid.Col>
               <Grid.Col sm={6}>
-                <CardGradient title="Soon" description="What could it be?" />
+                <CardGradient
+                  title="Herowand Editor"
+                  href="https://editor.herowand.com"
+                  image="https://herowand.com/logo.png"
+                  description="Enhance your experience with data."
+                />
               </Grid.Col>
             </Grid>
           </Stack>
