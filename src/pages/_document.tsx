@@ -12,7 +12,7 @@ export default class _Document extends Document {
       <Html lang="en">
         <Head>
           <SeoTags
-            image="og_image.png"
+            image="logo.png"
             description="Creating innovative next-generation software solutions for the people of tech industry."
             title="Herowand: Innovation Meets with Tools"
           />
