@@ -58,14 +58,6 @@ export default function Home() {
                   description="Visualize your JSON data instantly into graphs."
                 />
               </Grid.Col>
-              <Grid.Col sm={6}>
-                <CardGradient
-                  title="Herowand Editor"
-                  href="https://editor.herowand.com"
-                  image="https://herowand.com/logo.png"
-                  description="Enhance your experience with data."
-                />
-              </Grid.Col>
             </Grid>
           </Stack>
         </Center>
